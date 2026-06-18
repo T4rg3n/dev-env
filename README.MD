@@ -21,6 +21,7 @@ Run `./setup.sh` to restore the full environment from scratch. Each script is id
 - [Clipboard Indicator](https://github.com/tudmotu/gnome-shell-extension-clipboard-indicator) GNOME extension
 - [Gear Lever](https://flathub.org/apps/it.mijorus.gearlever) (AppImage manager)
 - Shell aliases
+- GNOME keyboard shortcuts (Super + E → Files, Super + Shift + S → screenshot snip, Super + D → Show desktop)
 - [uv](https://docs.astral.sh/uv/) Python toolchain manager
 - Python 3.14 via uv
 - [Framework Fan Control](https://extensions.gnome.org/extension/7864/framework-fan-control/) GNOME extension

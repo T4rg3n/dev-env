@@ -36,6 +36,9 @@ bash "$DIR/utils/gearlevel.sh"
 step "Configuring shell aliases"
 bash "$DIR/utils/aliases.sh"
 
+step "Configuring GNOME keyboard shortcuts"
+bash "$DIR/utils/keybindings.sh"
+
 step "Removing Fedora's firefox homepage"
 sudo dnf remove fedora-bookmarks
 
