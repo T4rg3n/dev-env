@@ -36,10 +36,25 @@ bash "$DIR/utils/gearlevel.sh"
 step "Configuring shell aliases"
 bash "$DIR/utils/aliases.sh"
 
+step "Removing Fedora's firefox homepage"
+sudo dnf remove fedora-bookmarks
+
+step "Installing uv (Python toolchain manager)"
+bash "$DIR/utils/uv.sh"
+
+step "Installing Python 3.14 via uv"
+bash "$DIR/utils/python314.sh"
+
+step "Installing fw-fanctrl (Framework fan control service)"
+bash "$DIR/system/fw-fanctrl.sh"
+
+step "Installing Framework Fan Control GNOME extension"
+bash "$DIR/utils/fw-fanctrl-gnome.sh"
+
 echo ""
 echo "━━━ Setup complete ━━━"
 echo ""
 echo "Next steps:"
 echo "  1. Reboot to activate MOK enrollment (QWERTY keyboard at the prompt + numbers layout)"
 echo "  2. Run: source ~/.bashrc"
-echo "  3. Log out and back in (or restart GNOME) for the Clipboard Indicator to appear"
+echo "  3. Log out and back in (or restart GNOME) for the Clipboard Indicator and fan control extension to appear"
