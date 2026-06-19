@@ -40,7 +40,8 @@ step "Configuring GNOME keyboard shortcuts"
 bash "$DIR/utils/keybindings.sh"
 
 step "Removing Fedora's firefox homepage"
-sudo dnf remove fedora-bookmarks
+sudo dnf remove fedora-bookmarks 
+sudo rm -f /usr/lib64/firefox//browser/defaults/preferences/firefox-redhat-default-prefs.js # the thing that sets the homepage to fedora.org
 
 step "Installing uv (Python toolchain manager)"
 bash "$DIR/utils/uv.sh"
