@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<Configuration>
+	<!-- E-cores only for Low Power Mode (CPUs 8-15 on Intel i7-1260P) -->
+	<lp_mode_cpus>8-15</lp_mode_cpus>
+
+	<!-- 0: cgroup v2 (best compatibility) -->
+	<Mode>0</Mode>
+
+	<!-- Performance profile: never use LPM (full power plugged in) -->
+	<PerformanceDef>-1</PerformanceDef>
+
+	<!-- Balanced: auto (opportunistically use E-cores when idle) -->
+	<BalancedDef>0</BalancedDef>
+
+	<!-- Power saver: always stay on E-cores -->
+	<PowersaverDef>1</PowersaverDef>
+
+	<!-- Enable HFI hints - hardware tells us which cores are efficient -->
+	<HfiLpmEnable>1</HfiLpmEnable>
+	<HfiSuvEnable>0</HfiSuvEnable>
+
+	<!-- Enter LP mode when system util drops below 20% -->
+	<util_entry_threshold>20</util_entry_threshold>
+	<!-- Exit LP mode when system util exceeds 60% -->
+	<util_exit_threshold>60</util_exit_threshold>
+
+	<!-- Small delays to avoid thrashing on brief load spikes -->
+	<EntryDelayMS>1000</EntryDelayMS>
+	<ExitDelayMS>0</ExitDelayMS>
+	<EntryHystMS>0</EntryHystMS>
+	<ExitHystMS>0</ExitHystMS>
+
+	<!-- Skip ITMT (not available on this kernel build) -->
+	<IgnoreITMT>1</IgnoreITMT>
+</Configuration>

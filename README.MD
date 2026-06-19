@@ -15,6 +15,10 @@ Run `./setup.sh` to restore the full environment from scratch. Each script is id
 - MOK key enrollment for DisplayLink
 - GNOME fundraiser notifications disabled
 - [fw-fanctrl](https://github.com/TamtamHero/fw-fanctrl) fan control service
+- Tuned `intel_lpmd` (Low Power Mode) for Intel i7-1260P (P-Cores = cpu0–7, E-Cores = cpu8–15)
+  - Plugged in (`performance` profile) : LPM disabled. All cores active (P + E). No restrictions.
+  - On battery (`balanced` profile) :  LPM auto. Switches to E-cores only when util < 20%, exits at > 60%.
+  - Eco mode (`power-saver` profile) :  LPM always on. E-cores only (8–15). P-Cores idled at all times via cgroup v2.
 
 **Utilities (`utils/`)**
 
