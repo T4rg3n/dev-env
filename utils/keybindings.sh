@@ -28,3 +28,6 @@ gsettings set org.gnome.shell.keybindings show-screenshot-ui "['<Super><Shift>s'
 
 # Super + D - show desktop (toggle hide all windows)
 gsettings set org.gnome.desktop.wm.keybindings show-desktop "['<Super>d']"
+
+# Super + R - open Activities overview (shows search bar, equivalent to 3-finger swipe up)
+gsettings set org.gnome.shell.keybindings toggle-overview "['<Super>r']"

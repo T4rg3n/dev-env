@@ -54,6 +54,9 @@ bash "$DIR/system/fw-fanctrl.sh"
 step "Installing Framework Fan Control GNOME extension"
 bash "$DIR/utils/fw-fanctrl-gnome.sh"
 
+step "Configuring intel_lpmd (Low Power Mode)"
+bash "$DIR/system/lpmd.sh"
+
 echo ""
 echo "━━━ Setup complete ━━━"
 echo ""
