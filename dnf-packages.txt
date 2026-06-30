@@ -340,6 +340,7 @@ systemd-oomd-defaults
 systemd-resolved
 systemd-udev
 tar
+tailscale
 tcpdump
 teamd
 thermald
