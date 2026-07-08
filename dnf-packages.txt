@@ -84,6 +84,8 @@ dkms
 dnf5
 dnf5-plugins
 dnsmasq
+docker-cli
+docker-compose-switch
 dos2unix
 dosfstools
 dracut-config-rescue
