@@ -28,6 +28,11 @@ sudo dnf install -y \
     tlp \
     tlp-rdw \
     powertop \
-    tuned
+    tuned \
+    docker-cli \
+    docker-compose-switch
+
+# Allow current user to run docker without sudo (re-login required)
+sudo usermod -aG docker "$USER"
 
 echo "All packages installed."
