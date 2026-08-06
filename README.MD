@@ -22,7 +22,7 @@ Run `./setup.sh` to restore the full environment from scratch. Each script is id
 
 **Utilities (`utils/`)**
 
-- [Clipboard Indicator](https://github.com/tudmotu/gnome-shell-extension-clipboard-indicator) GNOME extension
+- [Clipboard Indicator](https://github.com/tudmotu/gnome-shell-extension-clipboard-indicator) GNOME extension (clears history on session start)
 - [Gear Lever](https://flathub.org/apps/it.mijorus.gearlever) (AppImage manager)
 - Shell aliases
 - GNOME keyboard shortcuts (Super + E → Files, Super + Shift + S → screenshot snip, Super + D → Show desktop)
