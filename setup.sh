@@ -24,6 +24,9 @@ bash "$DIR/system/suspend-nvme-wifi.sh"
 step "MOK key enrollment for DisplayLink (akmod-evdi)"
 bash "$DIR/system/mok-displaylink.sh"
 
+step "Patching/rebuilding evdi for the running kernel (DisplayLink dock)"
+bash "$DIR/system/fix-evdi-kernel-api.sh"
+
 step "Disabling GNOME fundraiser notifications"
 bash "$DIR/system/fundraiser-notifications.sh"
 

@@ -13,6 +13,7 @@ Run `./setup.sh` to restore the full environment from scratch. Each script is id
 - `tuned` balanced-battery profile
 - NVMe/WiFi runtime autosuspend udev rules
 - MOK key enrollment for DisplayLink
+- Patch + rebuild `evdi` for the running kernel (DisplayLink dock fix after kernel updates)
 - GNOME fundraiser notifications disabled
 - [fw-fanctrl](https://github.com/TamtamHero/fw-fanctrl) fan control service
 - Tuned `intel_lpmd` (Low Power Mode) for Intel i7-1260P (P-Cores = cpu0–7, E-Cores = cpu8–15)
