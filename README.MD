@@ -21,6 +21,11 @@ Run `./setup.sh` to restore the full environment from scratch. Each script is id
   - On battery (`balanced` profile) :  LPM auto. Switches to E-cores only when util < 20%, exits at > 60%.
   - Eco mode (`power-saver` profile) :  LPM always on. E-cores only (8–15). P-Cores idled at all times via cgroup v2.
 
+**Apps (`apps/`)**
+
+- [VLC](https://flathub.org/apps/org.videolan.VLC) (Fedora Flatpak) and the OpenH264 codec (`org.fedoraproject.Platform.Codecs.openh264`)
+- [Cursor IDE](https://cursor.com) (DNF)
+
 **Utilities (`utils/`)**
 
 - [Clipboard Indicator](https://github.com/tudmotu/gnome-shell-extension-clipboard-indicator) GNOME extension (clears history on session start)
