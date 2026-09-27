@@ -23,7 +23,7 @@ Run `./setup.sh` to restore the full environment from scratch. Each script is id
 
 **Apps (`apps/`)**
 
-- [VLC](https://flathub.org/apps/org.videolan.VLC) (Fedora Flatpak) and the OpenH264 codec (`org.fedoraproject.Platform.Codecs.openh264`)
+- [VLC](https://flathub.org/apps/org.videolan.VLC) (Flathub Flatpak, codecs bundled)
 - [Cursor IDE](https://cursor.com) (DNF)
 
 **Utilities (`utils/`)**

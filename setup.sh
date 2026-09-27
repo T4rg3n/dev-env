@@ -36,7 +36,7 @@ bash "$DIR/utils/clipboard.sh"
 step "Installing Gear Lever (AppImage manager)"
 bash "$DIR/utils/gearlevel.sh"
 
-step "Installing VLC and the OpenH264 codec"
+step "Installing VLC (Flathub)"
 bash "$DIR/apps/vlc.sh"
 
 step "Configuring shell aliases"

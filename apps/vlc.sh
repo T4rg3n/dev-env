@@ -1,11 +1,12 @@
 #!/bin/bash
 
-# VLC from the Fedora Flatpak remote, plus the OpenH264 codec that runtime
-# does not ship (needed for H.264 playback).
+# VLC from Flathub. The Fedora Flatpak build has no EAC3 decoder and only
+# OpenH264 for H.264; the Flathub build bundles ffmpeg with those codecs.
 
 set -e
 
-FEDORA="$(rpm -E %fedora)"
+if flatpak info org.videolan.vlc &>/dev/null; then
+    flatpak uninstall -y org.videolan.vlc
+fi
 
-flatpak install -y fedora "org.fedoraproject.Platform.Codecs.openh264//f${FEDORA}"
-flatpak install -y fedora org.videolan.vlc
+flatpak install -y flathub org.videolan.VLC
