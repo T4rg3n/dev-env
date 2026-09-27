@@ -13,5 +13,6 @@ add_alias() {
 }
 
 add_alias "alias lh='ls -lh'"
+add_alias "alias getchmod='stat -c \"%a %n\"'"
 
 echo "Done. Run: source ~/.bashrc"

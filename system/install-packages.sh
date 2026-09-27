@@ -5,8 +5,8 @@ set -e
 # ── External repos ────────────────────────────────────────────────────────────
 
 # GitHub CLI
-if ! dnf repolist | grep -q "gh-cli"; then
-    sudo dnf config-manager --add-repo https://cli.github.com/packages/rpm/gh-cli.repo
+if [ ! -f /etc/yum.repos.d/gh-cli.repo ]; then
+    sudo dnf config-manager addrepo --from-repofile=https://cli.github.com/packages/rpm/gh-cli.repo
 fi
 
 # VS Code
