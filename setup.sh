@@ -27,6 +27,9 @@ bash "$DIR/system/mok-displaylink.sh"
 step "Patching/rebuilding evdi for the running kernel (DisplayLink dock)"
 bash "$DIR/system/fix-evdi-kernel-api.sh"
 
+step "DisplayLink dock brightness via ddcutil"
+bash "$DIR/system/ddcutil-displaylink.sh"
+
 step "Disabling GNOME fundraiser notifications"
 bash "$DIR/system/fundraiser-notifications.sh"
 
@@ -61,6 +64,9 @@ bash "$DIR/system/fw-fanctrl.sh"
 step "Installing Framework Fan Control GNOME extension"
 bash "$DIR/utils/fw-fanctrl-gnome.sh"
 
+step "Installing Brightness control using ddcutil GNOME extension"
+bash "$DIR/utils/display-brightness-ddcutil.sh"
+
 step "Configuring intel_lpmd (Low Power Mode)"
 bash "$DIR/system/lpmd.sh"
 
@@ -70,4 +76,4 @@ echo ""
 echo "Next steps:"
 echo "  1. Reboot to activate MOK enrollment (QWERTY keyboard at the prompt + numbers layout)"
 echo "  2. Run: source ~/.bashrc"
-echo "  3. Log out and back in (or restart GNOME) for the Clipboard Indicator and fan control extension to appear"
+echo "  3. Log out and back in (or restart GNOME) for the Clipboard Indicator, fan control, and display brightness extensions to appear"

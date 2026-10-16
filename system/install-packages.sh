@@ -30,7 +30,9 @@ sudo dnf install -y \
     powertop \
     tuned \
     docker-cli \
-    docker-compose-switch
+    docker-compose-switch \
+    ddcutil \
+    i2c-tools
 
 # Allow current user to run docker without sudo (re-login required)
 sudo usermod -aG docker "$USER"

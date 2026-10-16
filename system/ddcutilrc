@@ -1,0 +1,5 @@
+# evdi (DisplayLink) I2C adapters have no PCI display class, so ddcutil 2.2
+# rejects them before its DisplayLink path can read the sysfs EDID.
+# --f23 enables primitive sysfs mode and skips that class check.
+[global]
+options: --f23

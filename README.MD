@@ -14,6 +14,7 @@ Run `./setup.sh` to restore the full environment from scratch. Each script is id
 - NVMe/WiFi runtime autosuspend udev rules
 - MOK key enrollment for DisplayLink
 - Patch + rebuild `evdi` for the running kernel (DisplayLink dock fix after kernel updates)
+- DisplayLink dock brightness via `ddcutil` (i2c group, udev rule, `--f23` so evdi adapters are detected)
 - GNOME fundraiser notifications disabled
 - [fw-fanctrl](https://github.com/TamtamHero/fw-fanctrl) fan control service
 - Tuned `intel_lpmd` (Low Power Mode) for Intel i7-1260P (P-Cores = cpu0–7, E-Cores = cpu8–15)
@@ -35,6 +36,7 @@ Run `./setup.sh` to restore the full environment from scratch. Each script is id
 - [uv](https://docs.astral.sh/uv/) Python toolchain manager
 - Python 3.14 via uv
 - [Framework Fan Control](https://extensions.gnome.org/extension/7864/framework-fan-control/) GNOME extension
+- [Brightness control using ddcutil](https://github.com/daitj/gnome-display-brightness-ddcutil) GNOME extension
 
 **Other**
 
@@ -45,5 +47,5 @@ Run `./setup.sh` to restore the full environment from scratch. Each script is id
 
 1. Reboot to complete MOK enrollment (QWERTY keyboard at the prompt + numeric)
 2. Run `source ~/.bashrc`
-3. Log out and back in for GNOME extensions to appear
+3. Log out and back in for GNOME extensions to appear (including display brightness)
 
