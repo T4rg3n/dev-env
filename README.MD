@@ -8,7 +8,7 @@ Run `./setup.sh` to restore the full environment from scratch. Each script is id
 
 **System (`system/`)**
 
-- DNF packages and repos (GitHub CLI, VS Code, btop, fingerprint auth, DisplayLink/EVDI, TLP, powertop, tuned)
+- DNF packages and repos (GitHub CLI, VS Code, Tailscale official repo [Fedora’s package lags], btop, fingerprint auth, DisplayLink/EVDI, TLP, powertop, tuned)
 - Deep sleep (`mem_sleep_default=deep`)
 - `tuned` balanced-battery profile
 - NVMe/WiFi runtime autosuspend udev rules
