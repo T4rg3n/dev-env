@@ -50,6 +50,7 @@ bzip2
 chrony
 cifs-utils
 cirrus-audio-firmware
+code
 colord
 compsize
 coreutils
