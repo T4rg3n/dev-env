@@ -315,6 +315,8 @@ rpm
 rsync
 rsyslog
 rygel
+remmina
+remmina-plugins-rdp
 samba-client
 sane-backends-drivers-scanners
 seahorse
