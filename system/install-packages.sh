@@ -24,15 +24,18 @@ fi
 
 # ── Packages ──────────────────────────────────────────────────────────────────
 
+# akmod-evdi is not in the Fedora repos (dropped before F45). evdi ships
+# inside the DisplayLink RPM and is built by DKMS; see mok-displaylink.sh.
+#
+# tlp conflicts with tuned — each package Conflicts: the other — and a single
+# dnf transaction fails entirely when any requested package is missing or
+# conflicts. Power management here is tuned + intel_lpmd, so tlp is omitted.
 sudo dnf install -y \
     btop \
     fprintd \
     fprintd-pam \
-    akmod-evdi \
     gh \
     code \
-    tlp \
-    tlp-rdw \
     powertop \
     tuned \
     docker-cli \

@@ -8,7 +8,7 @@ Run `./setup.sh` to restore the full environment from scratch. Each script is id
 
 **System (`system/`)**
 
-- DNF packages and repos (GitHub CLI, VS Code, Tailscale official repo [Fedora’s package lags], btop, fingerprint auth, DisplayLink/EVDI, TLP, powertop, tuned)
+- DNF packages and repos (GitHub CLI, VS Code, Tailscale official repo [Fedora’s package lags], btop, fingerprint auth, powertop, tuned). `tlp` is not installed: it conflicts with `tuned`. `akmod-evdi` is not in the Fedora repos; evdi comes from the DisplayLink RPM via DKMS.
 - Deep sleep (`mem_sleep_default=deep`)
 - `tuned` balanced-battery profile
 - NVMe/WiFi runtime autosuspend udev rules
@@ -33,10 +33,12 @@ Run `./setup.sh` to restore the full environment from scratch. Each script is id
 - [Gear Lever](https://flathub.org/apps/it.mijorus.gearlever) (AppImage manager)
 - Shell aliases
 - GNOME keyboard shortcuts (Super + E → Files, Super + Shift + S → screenshot snip, Super + D → Show desktop)
+- French AZERTY (`fr+azerty`) for the session and the lock screen. A Fedora upgrade resets the system keymap (`localectl`) to `us`, which is what the lock screen uses.
 - [uv](https://docs.astral.sh/uv/) Python toolchain manager
 - Python 3.14 via uv
 - [Framework Fan Control](https://extensions.gnome.org/extension/7864/framework-fan-control/) GNOME extension
 - [Brightness control using ddcutil](https://github.com/daitj/gnome-display-brightness-ddcutil) GNOME extension
+- [Framework power LED](https://github.com/T4rg3n/fw-gnome-battery-led) quick-settings toggle. Upstream metadata lags new Shell releases; the installer adds the running major when the build is otherwise current.
 
 **Other**
 

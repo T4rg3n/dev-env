@@ -77,3 +77,7 @@ for c in /sys/class/drm/card*-*/status; do
 done
 echo ""
 echo "If the dock screens are still dark, re-plug the dock or re-run this script."
+echo ""
+echo "On GNOME 51 (Fedora 45) Mutter can detect the dock and still show black"
+echo "screens (Page flip failed: drmModeAtomicCommit). Workaround, then log out:"
+echo "  echo 'MUTTER_DEBUG_USE_FBOS=0' | sudo tee /etc/environment.d/90-mutter-kms.conf"
