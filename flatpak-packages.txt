@@ -1,6 +1,6 @@
-com.bitwarden.desktop
-com.discordapp.Discord
-it.mijorus.gearlever
-org.kicad.kicad
-org.prismlauncher.PrismLauncher
-org.videolan.VLC
+com.bitwarden.desktop flathub
+com.discordapp.Discord flathub
+it.mijorus.gearlever flathub
+org.kicad.kicad fedora
+org.prismlauncher.PrismLauncher flathub
+org.videolan.VLC flathub

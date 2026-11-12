@@ -24,7 +24,7 @@ Run `./setup.sh` to restore the full environment from scratch. Each script is id
 
 **Apps (`apps/`)**
 
-- [VLC](https://flathub.org/apps/org.videolan.VLC) (Flathub Flatpak, codecs bundled)
+- Flatpak apps from `flatpak-packages.txt` (Flathub, plus KiCad from the Fedora remote)
 - [Cursor IDE](https://cursor.com) (DNF)
 
 **Utilities (`utils/`)**
@@ -42,6 +42,7 @@ Run `./setup.sh` to restore the full environment from scratch. Each script is id
 
 - Removes Fedora's Firefox homepage (`fedora-bookmarks`)
 - `dnf-packages.txt` — reference list of installed packages
+- `flatpak-packages.txt` — reference list of installed Flatpak apps (`app-id remote`)
 
 ## After setup
 
