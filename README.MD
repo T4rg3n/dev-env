@@ -34,6 +34,8 @@ Run `./setup.sh` to restore the full environment from scratch. Each script is id
 - Shell aliases
 - GNOME keyboard shortcuts (Super + E → Files, Super + Shift + S → screenshot snip, Super + D → Show desktop)
 - French AZERTY (`fr+azerty`) for the session and the lock screen. A Fedora upgrade resets the system keymap (`localectl`) to `us`, which is what the lock screen uses.
+- [Soft Brightness Plus](https://github.com/jkitching/soft-brightness-plus) from the upstream GitHub release (the extensions.gnome.org build does not support GNOME 51)
+- Fingerprint: GNOME 51 only allows it for unlock / after sleep. Boot login is password-only on purpose (keyring cannot be unlocked by fingerprint alone).
 - [uv](https://docs.astral.sh/uv/) Python toolchain manager
 - Python 3.14 via uv
 - [Framework Fan Control](https://extensions.gnome.org/extension/7864/framework-fan-control/) GNOME extension

@@ -70,8 +70,11 @@ bash "$DIR/utils/fw-fanctrl-gnome.sh"
 step "Installing Framework power LED GNOME extension"
 bash "$DIR/utils/fw-battery-led.sh"
 
-step "Marking Soft Brightness Plus compatible with this GNOME Shell"
-bash "$DIR/utils/stamp-extension.sh" soft-brightness-plus@joelkitching.com
+step "Installing Soft Brightness Plus"
+bash "$DIR/utils/soft-brightness.sh"
+
+step "Fingerprint login note (GNOME 51 unlock-only)"
+bash "$DIR/system/fingerprint-greeter.sh"
 
 step "Installing Brightness control using ddcutil GNOME extension"
 bash "$DIR/utils/display-brightness-ddcutil.sh"
