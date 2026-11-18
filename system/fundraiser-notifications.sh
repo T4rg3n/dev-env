@@ -1,4 +1,4 @@
 #!/bin/bash
 
 # Disable fundraiser notifications
-gsettings set org.gnome.desktop.notifications.application:/org/gnome/desktop/notifications/application/org-gnome-software/ enable false
+gsettings set org.gnome.settings-daemon.plugins.housekeeping donation-reminder-enabled false
